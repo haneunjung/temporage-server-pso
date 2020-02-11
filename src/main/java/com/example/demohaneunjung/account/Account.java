@@ -1,16 +1,14 @@
 package com.example.demohaneunjung.account;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.persistence.*;
 
-@Entity @Table(name = "account")
+@Builder
 @Getter @Setter
 @AllArgsConstructor @NoArgsConstructor
+@Entity @Table(name = "account")
 public class Account {
 
     @GeneratedValue @Id
